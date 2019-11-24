@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Web Developer",
     author: "Eddie Chu",
-    tagline: "Eddie Chu is a California based digital designer & web developer."
+    tagline: "Eddie Chu works as a full-time software developer, but is open to new and exciting projects."
   },
   plugins: [
     'gatsby-plugin-react-helmet',
