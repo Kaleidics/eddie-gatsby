@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby intro!",
-    author: "Eddie Chu!"
+    title: "Web Developer",
+    author: "Eddie Chu",
+    tagline: "Eddie Chu is a California based digital designer & web developer."
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -13,6 +14,13 @@ module.exports = {
       }
     },
     'gatsby-plugin-sass',
+    'gatsby-plugin-styled-components',
+    {
+      resolve: "gatsby-plugin-typography",
+      options: {
+        pathToConfigModule: "src/utils/typography.js"
+      }
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

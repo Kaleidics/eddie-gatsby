@@ -8,9 +8,7 @@ import Layout from "../components/layout"
 const IndexPage = () => {
   return (
     <Layout>
-      <Head title="Home"/>
-      <h1>Hello</h1>
-      <h2>Woorld</h2>
+      <Head title="Eddie Chu"/>
     </Layout>
   )
 }
