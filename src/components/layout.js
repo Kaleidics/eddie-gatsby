@@ -25,8 +25,8 @@ const Layout = (props) => {
 const StyledLayout = styled.div`
   margin: 0 auto;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-position: top;
+  background-size: contain;
   background-image: linear-gradient(
       to bottom right,
       rgba(0, 192, 255, 0.8),
@@ -36,7 +36,7 @@ const StyledLayout = styled.div`
 
   @media screen and (min-width: 1024px) {
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: 50% 100%;
     background-size: cover;
     background-image: linear-gradient(
         to bottom right,
