@@ -4,6 +4,9 @@ import styled from 'styled-components'
 import sig from "../images/portfolio_sig.png"
 
 import Navbar from './navbar'
+import pplace_mini from "../images/pplace_mini.png"
+import pplace from "../images/pplace.png"
+import pplace_vert from "../images/pplace_vert.png"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -45,6 +48,22 @@ const StyledHeader = styled.header`
   max-width: 1440px;
   margin: 0 auto;
 
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 192, 255, 0.8),
+      rgba(0, 192, 126, 0.9)
+    ),
+    url(${pplace_vert});
+  max-height: 800px;
+
+  @media screen and (min-width: 1024px) {
+    background: none;
+  }
+
   @media screen and (min-width: 1024px) {
     padding: 20px 0 0 0;
   }
@@ -58,7 +77,7 @@ const StyledHeader = styled.header`
 
     h1 {
       font-family: "Assistant", san-serif;
-      font-weight: bold;
+      font-weight: 900;
       font-size: 36px;
       line-height: 1.1;
       max-width: 800px;

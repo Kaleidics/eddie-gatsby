@@ -55,13 +55,17 @@ const StyledNavbar = styled.nav`
 
   li {
     margin: 0;
-    margin-left: 30px;
+    margin-left: 15px;
+
+    @media screen and (min-width: 1024px) {
+      margin-left: 30px;
+    }
   }
 
   a, a:visited {
     text-decoration: none;
     color: #fff;
   }
-`;
+`
 
 export default Navbar

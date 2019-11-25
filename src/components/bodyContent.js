@@ -7,6 +7,8 @@ import icon1 from "../images/icon1.png"
 import icon2 from "../images/icon2.png"
 import icon3 from "../images/icon3.png"
 
+import Projects from "../components/projects"
+
 const BodyContent = () => {
   return (
     <StyledBodyContent>
@@ -33,6 +35,7 @@ const BodyContent = () => {
           desc="Netlify, Heroku, Zeit, Git, GitHub, SEO, WCAG 2.0 Accessibility, Google Analytics"
         />
       </section>
+      <Projects />
     </StyledBodyContent>
   )
 }
