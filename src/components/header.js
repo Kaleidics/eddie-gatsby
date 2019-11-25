@@ -98,7 +98,7 @@ const StyledHeader = styled.header`
   .sig-container {
     width: 80%;
     max-width: 350px;
-    margin: 0 0 40px 0;
+    margin: 0 0 80px 0;
 
     img {
       margin: 0;

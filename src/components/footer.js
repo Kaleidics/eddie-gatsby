@@ -112,7 +112,7 @@ const StyledFooter = styled.footer`
     background: #2b5468;
     display: flex;
     align-items: center;
-    border-radius: 3px;
+    border-radius: 2px;
     margin-right: 2%;
     padding: 0 5px;
 
@@ -128,7 +128,7 @@ const StyledFooter = styled.footer`
     background: rgb(0, 226, 182);
     display: flex;
     align-items: center;
-    border-radius: 3px;
+    border-radius: 2px;
     padding: 1px 5px;
 
     p {
@@ -140,6 +140,7 @@ const StyledFooter = styled.footer`
   }
 
   .tagline {
+    letter-spacing: .3px;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.75);
     line-height: 1.6;

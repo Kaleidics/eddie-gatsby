@@ -3,6 +3,7 @@ import React from 'react'
 import Header from "../components/header"
 import Footer from "../components/footer"
 import '../styles/index.scss'
+import BodyContent from "../components/bodyContent"
 
 import styled from 'styled-components'
 import pplace_mini from '../images/pplace_mini.png'
@@ -13,6 +14,7 @@ const Layout = (props) => {
         <StyledLayout>
             <StyledContent>
                 <Header />
+                <BodyContent />
                 {props.children}
             </StyledContent>
             <Footer />
