@@ -34,6 +34,8 @@ const StyledCard = styled.div`
   img {
     margin: 0;
     margin-left: -10px;
+    width: 100px;
+    height: 100px;
   }
 
   p {
