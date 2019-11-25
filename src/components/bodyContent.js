@@ -6,6 +6,8 @@ import Card from "../components/card"
 import icon1 from "../images/icon1.png"
 import icon2 from "../images/icon2.png"
 import icon3 from "../images/icon3.png"
+import icon4 from "../images/icon4.png"
+import icon5 from "../images/icon5.png"
 
 import Projects from "../components/projects"
 
@@ -22,14 +24,14 @@ const BodyContent = () => {
         />
         <Card
           title="Full-stack Web Development"
-          icon={icon2}
+          icon={icon4}
           alt="fullstack icon"
           overview="Go beyond a static site with a full-stack JavaScript web app."
           desc="JavaScript, Node.js, Express, MongoDB, JWT Token Based Authentication, REST API"
         />
         <Card
           title="Web Services"
-          icon={icon3}
+          icon={icon5}
           alt="web services"
           overview="Using the latest cloud technologies, deploy fast and scale easily."
           desc="Netlify, Heroku, Zeit, Git, GitHub, SEO, WCAG 2.0 Accessibility, Google Analytics"
