@@ -3,11 +3,11 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 
 import Card from "../components/card"
-import icon1 from "../images/icon1.png"
+import icon1 from "../images/icon1@2x.png"
 import icon2 from "../images/icon2.png"
 import icon3 from "../images/icon3.png"
-import icon4 from "../images/icon4.png"
-import icon5 from "../images/icon5.png"
+import icon4 from "../images/icon4@2x.png"
+import icon5 from "../images/icon5@2x.png"
 
 import Projects from "../components/projects"
 
