@@ -18,6 +18,8 @@ const Projects = () => {
               }
             }
             title
+            overview
+            tags
             slug
             publishedDate(formatString: "MMMM Do, YYYY")
           }
@@ -32,7 +34,8 @@ const Projects = () => {
       <ProjectCard
         slug={`/blog/${edge.node.slug}`}
         title={edge.node.title}
-        publishedDate={edge.node.publishedDate}
+        overview={edge.node.overview}
+        tags={edge.node.tags}
         hero={edge.node.hero.file.url}
       />
     )
@@ -41,19 +44,36 @@ const Projects = () => {
   return (
     <StyledProjects>
       <h2>Latest Projects</h2>
+      <div className="projects-container">
 
       {projects}
+      </div>
     </StyledProjects>
   )
 }
 
 const StyledProjects = styled.section`
   padding: 0 20px;
-  margin: 40px 0 0 0;
+  margin: 40px auto 0 auto;
+  max-width: 1280px;
+
   h2 {
     font-size: 28px;
     font-family: "Assistant", sans-serif;
     font-weight: 900;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      align-items: initial;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 `
 

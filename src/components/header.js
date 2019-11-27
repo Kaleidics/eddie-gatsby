@@ -45,7 +45,7 @@ const Header = () => {
 const StyledHeader = styled.header`
   display: flex;
   flex-direction: column-reverse;
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 0 auto;
 
   margin: 0 auto;
