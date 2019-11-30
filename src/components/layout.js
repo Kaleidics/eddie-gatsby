@@ -14,8 +14,8 @@ const Layout = (props) => {
     return (
         <StyledLayout>
             <StyledContent>
-                <Header />
-                <BodyContent />
+                
+                
                 {props.children}
             </StyledContent>
             <Footer />
