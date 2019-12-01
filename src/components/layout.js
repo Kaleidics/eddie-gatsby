@@ -25,7 +25,7 @@ const Layout = (props) => {
 
 const StyledLayout = styled.div`
   margin: 0 auto;
-
+  
   @media screen and (min-width: 1024px) {
     background-repeat: no-repeat;
     background-position: 100% 50%;

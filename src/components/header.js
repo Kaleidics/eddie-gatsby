@@ -48,11 +48,23 @@ const StyledHeader = styled.header`
   max-width: 1280px;
   margin: 0 auto;
 
-  margin: 0 auto;
-
+  
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 192, 255, 0.8),
+      rgba(0, 158, 126, 0.9)
+    ),
+    url(${pplace_vert});
+  max-height: 800px;
+  
+  
+  background-repeat: no-repeat;
+  background-position: center top;
 
   @media screen and (min-width: 1024px) {
     padding: 20px 0 0 0;
+    background: none;
   }
 
   .header-content {
