@@ -9,7 +9,7 @@ const Projects = () => {
     # Write your query or mutation here
 
     query {
-      allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
+      allContentfulBlogPost {
         edges {
           node {
             hero {
@@ -21,7 +21,7 @@ const Projects = () => {
             overview
             tags
             slug
-            publishedDate(formatString: "MMMM Do, YYYY")
+            
           }
         }
       }

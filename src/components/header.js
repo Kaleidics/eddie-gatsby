@@ -49,20 +49,7 @@ const StyledHeader = styled.header`
   margin: 0 auto;
 
   margin: 0 auto;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  background-image: linear-gradient(
-      to bottom right,
-      rgba(0, 192, 255, 0.8),
-      rgba(0, 192, 126, 0.9)
-    ),
-    url(${pplace_vert});
-  max-height: 800px;
 
-  @media screen and (min-width: 1024px) {
-    background: none;
-  }
 
   @media screen and (min-width: 1024px) {
     padding: 20px 0 0 0;

@@ -10,12 +10,12 @@ const BlogPage = () => {
 
   const data = useStaticQuery(graphql`
     query {
-      allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
+      allContentfulBlogPost {
         edges {
           node {
             title
             slug
-            publishedDate(formatString: "MMMM Do, YYYY")
+            
           }
         }
       }
@@ -33,7 +33,7 @@ const BlogPage = () => {
                 <li className={blogStyles.post}>
                   <Link to={`/blog/${edge.node.slug}`}>
                     <h2>{edge.node.title}</h2>
-                    <p>{edge.node.publishedDate}</p>
+                    
                   </Link>
                 </li>
               )
