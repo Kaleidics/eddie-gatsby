@@ -25,16 +25,38 @@ import BlogHeader from "./blogHeader"
 
 //grab a specific post from contentful based on slug
 export const query = graphql`
-  query($slug: String!) {
-    contentfulBlogPost(slug: {eq: $slug}) {
-      title
-      
-      body {
-        json
-      }
-    }
-  }
-`
+         query($slug: String!) {
+           contentfulBlogPost(slug: { eq: $slug }) {
+             screenshots {
+               file {
+                 url
+               }
+             }
+             color1
+             color2
+             hero {
+               file {
+                 url
+               }
+             }
+             herovert {
+               file {
+                 url
+               }
+             }
+
+             title
+             overview
+             tags
+             slug
+             website
+             code
+             body {
+               json
+             }
+           }
+         }
+       `
 
 //dril into a specific node for images
 const Blog = (props) => {
@@ -48,27 +70,37 @@ const Blog = (props) => {
         }
       }
     }
-
+console.log("templates", props.data.contentfulBlogPost.screenshots)
     return (
-      <>
+      <Layout
+        color1={props.data.contentfulBlogPost.color1}
+        color2={props.data.contentfulBlogPost.color2}
+        hero={props.data.contentfulBlogPost.hero.file.url}
+        herovert={props.data.contentfulBlogPost.herovert.file.url}
+      >
         <Head title={props.data.contentfulBlogPost.title} />
 
-        <BlogHeader title={props.data.contentfulBlogPost.title} />
-        <StyledBlogContent>
+        <BlogHeader
+          title={props.data.contentfulBlogPost.title}
+          overview={props.data.contentfulBlogPost.overview}
+          website={props.data.contentfulBlogPost.website}
+          code={props.data.contentfulBlogPost.code}
+        />
+        <StyledBlogContent title={props.data.contentfulBlogPost.title}>
           <h1>{props.data.contentfulBlogPost.title}</h1>
-          
 
           {documentToReactComponents(
             props.data.contentfulBlogPost.body.json,
             options
           )}
         </StyledBlogContent>
-      </>
+      </Layout>
     )
 }
 
 const StyledBlogContent = styled.main`
 background: #fff;
+padding: 0 20px;
 `;
 
 export default Blog
