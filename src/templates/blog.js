@@ -8,6 +8,7 @@ import Head from "../components/head"
 import Navbar from "../components/navbar"
 import styled from "styled-components"
 import Header from "../components/header"
+import Screenshots from "./screenshots"
 
 import BlogHeader from "./blogHeader"
 //previous grabbing using markdown
@@ -87,20 +88,24 @@ console.log("templates", props.data.contentfulBlogPost.screenshots)
           code={props.data.contentfulBlogPost.code}
         />
         <StyledBlogContent title={props.data.contentfulBlogPost.title}>
-          <h1>{props.data.contentfulBlogPost.title}</h1>
-
           {documentToReactComponents(
             props.data.contentfulBlogPost.body.json,
             options
           )}
         </StyledBlogContent>
+        <Screenshots images={props.data.contentfulBlogPost.screenshots} />
       </Layout>
     )
 }
 
 const StyledBlogContent = styled.main`
 background: #fff;
-padding: 0 20px;
+padding: 30px 20px;
+
+p {
+  max-width: 1280px;
+  margin: 20px auto;
+}
 `;
 
 export default Blog

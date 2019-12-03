@@ -24,7 +24,7 @@ const StyledCard = styled.div`
   width: 90%;
   margin-bottom: 20px;
   box-shadow: 0px 10px 20px 0px rgba(0, 25, 50, 0.05);
-  max-height: 355px;
+  max-height: 400px;
 
   @media screen and (min-width: 1024px) {
     margin-left: 12px;
