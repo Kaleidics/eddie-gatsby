@@ -1,9 +1,9 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import styled from 'styled-components'
+import styled from "styled-components"
 import sig from "../images/portfolio_sig.png"
 
-import Navbar from './navbar'
+import Navbar from "./navbar"
 import pplace_mini from "../images/pplace_mini.png"
 import pplace from "../images/pplace.png"
 import pplace_vert from "../images/pplace_vert.png"
@@ -22,8 +22,14 @@ const Header = () => {
   return (
     <StyledHeader>
       <div className="header-content">
-        <h1>Freelance <span>digital designer</span> & <span>web developer</span> based in California</h1>
-        <p>Hey! My name is Eddie Chu. I am a design driven developer that uses hot new tools and tech to create modern websites.</p>
+        <h1>
+          Freelance <span>digital designer</span> & <span>web developer</span>{" "}
+          based in California
+        </h1>
+        <p>
+          Hey! My name is Eddie Chu. I am a design driven developer that uses
+          hot new tools and tech to create modern websites.
+        </p>
         <div className="connect">
           <a
             href="mailto:contact@eddiechu.dev"
@@ -48,7 +54,6 @@ const StyledHeader = styled.header`
   max-width: 1280px;
   margin: 0 auto;
 
-  
   background-size: cover;
   background-image: linear-gradient(
       to bottom right,
@@ -57,8 +62,7 @@ const StyledHeader = styled.header`
     ),
     url(${pplace_vert});
   max-height: 800px;
-  
-  
+
   background-repeat: no-repeat;
   background-position: center top;
 

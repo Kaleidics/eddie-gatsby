@@ -7,7 +7,7 @@ import Layout from '../components/layout'
 import Head from "../components/head"
 import Navbar from "../components/navbar"
 import styled from "styled-components"
-import Header from "../components/header"
+
 import Screenshots from "./screenshots"
 
 import BlogHeader from "./blogHeader"
