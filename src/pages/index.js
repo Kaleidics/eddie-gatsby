@@ -4,7 +4,7 @@ import React from "react"
 import Head from '../components/head'
 
 import Layout from "../components/layout"
-import Header from "../components/Header"
+import Header from "../components/header"
 import BodyContent from "../components/bodyContent"
 import pplace from "../images/pplace.png"
 const IndexPage = () => {
