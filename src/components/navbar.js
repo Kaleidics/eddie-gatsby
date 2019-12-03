@@ -1,19 +1,11 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 import styled from 'styled-components'
 
 import logo from '../images/logo_temp.png'
 
 const Navbar = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  
 
   return (
     <StyledNavbar>

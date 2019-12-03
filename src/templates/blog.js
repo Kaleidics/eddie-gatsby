@@ -5,7 +5,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Layout from '../components/layout'
 
 import Head from "../components/head"
-import Navbar from "../components/navbar"
+
 import styled from "styled-components"
 
 import Screenshots from "./screenshots"

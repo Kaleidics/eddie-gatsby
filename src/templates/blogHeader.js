@@ -1,7 +1,7 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+
 import styled from "styled-components"
-import sig from "../images/portfolio_sig.png"
+
 
 import Navbar from "../components/navbar"
 

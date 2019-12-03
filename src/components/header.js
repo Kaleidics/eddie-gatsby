@@ -1,23 +1,14 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+
 import styled from "styled-components"
 import sig from "../images/portfolio_sig.png"
 
 import Navbar from "./navbar"
-import pplace_mini from "../images/pplace_mini.png"
-import pplace from "../images/pplace.png"
+
 import pplace_vert from "../images/pplace_vert.png"
 
 const Header = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+ 
 
   return (
     <StyledHeader>

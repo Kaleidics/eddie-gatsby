@@ -3,12 +3,10 @@ import React from 'react'
 
 import Footer from "../components/footer"
 import '../styles/index.scss'
-import BodyContent from "../components/bodyContent"
+
 
 import styled from 'styled-components'
-import pplace_mini from '../images/pplace_mini.png'
-import pplace from '../images/pplace.png'
-import pplace_vert from '../images/pplace_vert.png'
+
 
 const Layout = (props) => {
     return (
