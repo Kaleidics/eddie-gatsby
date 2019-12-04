@@ -10,7 +10,11 @@ import styled from "styled-components"
 
 import Screenshots from "./screenshots"
 
+import Tags from "./tags"
+
 import BlogHeader from "./blogHeader"
+
+import Projects from "../components/projects"
 //previous grabbing using markdown
 // export const query = graphql`
 //   query($slug: String!) {
@@ -52,6 +56,7 @@ export const query = graphql`
              slug
              website
              code
+             tags
              body {
                json
              }
@@ -71,7 +76,7 @@ const Blog = (props) => {
         }
       }
     }
-console.log("templates", props.data.contentfulBlogPost.screenshots)
+console.log("templates", props.data.contentfulBlogPost.tags)
     return (
       <Layout
         color1={props.data.contentfulBlogPost.color1}
@@ -93,14 +98,44 @@ console.log("templates", props.data.contentfulBlogPost.screenshots)
             options
           )}
         </StyledBlogContent>
+        <StyledHeading>Screenshots</StyledHeading>
         <Screenshots images={props.data.contentfulBlogPost.screenshots} />
+        <StyledHr />
+        {/* <Tags tags={props.data.contentfulBlogPost.tags} /> */}
+        <Projects />
       </Layout>
     )
 }
 
+const StyledHr = styled.hr`
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 2px;
+  border-radius: 5px;
+  background: rgba(95, 95, 95, 0.3);
+
+  @media screen and (min-width: 1280px) {
+    margin: 40px auto 20px auto;
+  }
+`
+
+const StyledHeading = styled.h3`
+  padding: 0 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    padding: 0;
+    text-align: left;
+  }
+`
+
 const StyledBlogContent = styled.main`
 background: #fff;
 padding: 30px 20px;
+
 
 p {
   max-width: 1280px;

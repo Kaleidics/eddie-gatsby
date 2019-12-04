@@ -60,6 +60,7 @@ const StyledProjects = styled.section`
 
   @media screen and (min-width: 1024px) {
     width: 100%;
+    padding: 0;
   }
 
   h2 {
