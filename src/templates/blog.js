@@ -140,6 +140,7 @@ padding: 30px 20px;
 p {
   max-width: 1280px;
   margin: 20px auto;
+  min-height: 300px;
 }
 `;
 
