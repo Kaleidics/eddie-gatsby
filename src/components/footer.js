@@ -179,7 +179,7 @@ const StyledFooter = styled.footer`
   }
 
   .sig-container {
-    width: 80%;
+    width: 66%;
     max-width: 200px;
     margin: 0 0 40px 0;
 

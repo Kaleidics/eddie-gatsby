@@ -5,7 +5,7 @@ import styled from "styled-components"
 const Screenshots = props => {
 
   let images = props.images.map((image, index) => {
-    return <img src={image.file.url} alt="screenshot" />
+    return <img class="screenshots" src={image.file.url} alt="screenshot" />
   });
   console.log("ss", images)
   return (
@@ -21,7 +21,6 @@ const StyledScreenshots = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  
 
   @media screen and (min-width: 1280px) {
     padding: 0;
@@ -30,13 +29,14 @@ const StyledScreenshots = styled.div`
     justify-content: space-between;
   }
 
-  img {
+  img.screenshots {
     width: 100%;
-    border-radius: 2px;
+    border-radius: 3px;
     height: 180px;
     max-height: 180px;
     max-width: 335px;
     margin: 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.2);
 
     @media screen and (min-width: 1280px) {
       width: 400px;

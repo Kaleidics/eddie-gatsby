@@ -23,9 +23,8 @@ const ProjectCard = props => {
 const StyledProjectCard = styled.div`
   display: inline-block;
   margin-bottom: 30px;
-  max-width: 400px;
   height: 200px;
-  width: 95%;
+  width: 100%;
   @media screen and (min-width: 1024px) {
     width: 33%;
   }
@@ -69,11 +68,11 @@ const StyledProjectCard = styled.div`
       left: 0;
       z-index: 3;
       padding: 25px 30px 10px 30px;
-      background: rgba(95, 95, 95, 0.5);
+      background: rgba(35, 35, 35, 0.5);
       transition: all 0.3s;
 
       &:hover {
-        background: rgba(95, 95, 95, 0.3)
+        background: rgba(35, 35, 35, 0.2);
       }
     }
     
@@ -82,7 +81,8 @@ const StyledProjectCard = styled.div`
       margin: 0 auto;
       width: 100%;
       padding: 25px 30px 10px 30px;
-
+      border-radius: 3px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 1px 6px rgba(0,0,0,0.2);
       border-radius: 2px;
       height: 100%;
     }
