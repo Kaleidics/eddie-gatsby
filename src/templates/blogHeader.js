@@ -58,6 +58,7 @@ const StyledBlogHeader = styled.header`
     }
 
     h1 {
+      color: #fff;
       font-family: "Assistant", san-serif;
       font-weight: 900;
       font-size: 36px;
