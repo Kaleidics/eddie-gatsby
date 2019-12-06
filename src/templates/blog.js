@@ -133,15 +133,14 @@ const StyledHeading = styled.h3`
 `
 
 const StyledBlogContent = styled.main`
-background: #fff;
-padding: 30px 20px;
-
-
-p {
-  max-width: 1280px;
-  margin: 20px auto;
+  background: #fff;
+  padding: 30px 20px;
   min-height: 300px;
-}
-`;
+
+  p {
+    max-width: 1280px;
+    margin: 20px auto;
+  }
+`
 
 export default Blog
